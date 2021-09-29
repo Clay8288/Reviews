@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(221, 237, 243);
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    height: 100h;
+    width: 100vw;
+}
+
+.container{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    margin-left: 350px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.underline{
+    border-top: 0.5em solid lightblue;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.review{
+    width: 50vw;
+    height: 70vh;
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.img-container{
+    display: flex;
+}
+
+.img-container img{
+    width: 250px;
+    height: 250px;
+    border-radius:50%;
+    object-fit: cover;
+    border: 0.5em solid lightblue;
+    box-shadow: 5px 5px 5px lightgray;
+    margin: 20px auto;
+}
+
+h4{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+p{
+    text-align: center;
+    margin: 20px 30px 0 30px;
+}
+
+#job{
+    margin: 0;
+    text-transform: uppercase;
+    color: lightskyblue;
+    font-size: 1em;
+}
+
+#info{
+    font-size: 0.9em;
+}
+
+.button-container{
+    position: relative;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.prev-btn {
+    height:40px; 
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.next-btn{
+    height:40px; 
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.prev-btn::before,
+.prev-btn::after{
+    position:absolute;
+    content:"";
+    border:20px solid transparent;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.prev-btn::before{
+    top:0;
+    border-top-color:lightskyblue;
+    transform: rotate(90deg);
+}
+
+
+.next-btn::before,
+.next-btn::after{
+    position:absolute;
+    content:"";
+    border:20px solid transparent;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.next-btn::before{
+    top:0;
+    border-top-color:lightskyblue;
+    transform: rotate(-90deg);
+}
+
+
+.random-btn{
+    background-color: rgb(189, 228, 238);
+    border: 0.2em solid rgb(113, 194, 221);
+    border-radius: 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 5px;
+    color: rgb(88, 158, 182);
+}
